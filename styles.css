@@ -10,6 +10,7 @@ h1 {
   
   h3 {
     font-size: 2em;
+    margin-bottom: 5px;
   }
   
   .container {
@@ -21,17 +22,11 @@ h1 {
   }
   
 
-  .itemInfo {
-    height: 20%;
-  }
-
-  .participant_list {
-    height: 80%;
-  }
   
   .participant_list {
     margin-left: 8%;
     margin-right: 10%;
+    margin-top: 75px;
   }
 
   .participant {
@@ -60,3 +55,15 @@ h1 {
     padding: 0;
   }
   
+  .specialThanks
+  {
+    margin-top: 70px;
+    font-size: 0.9em;
+  }
+
+  .specialThanks h4
+  {
+    font-size: 1.6em;
+    margin: 0;
+    font-weight: normal;
+  }

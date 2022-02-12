@@ -9,37 +9,37 @@ class Participant
       
       let first_name = english_name.split(' ')[0].toLowerCase();
       console.log(first_name);
-      this.image_file = `./assets/kakatua/${first_name}_12x9.jpg`;
+      this.image_file = `./assets/${first_name}_12x9.jpg`;
       console.log(this.image_file);
    }
 }
 
-const kakatua_participants = 
+const ekushe_participants = 
 [
-   // Saadan
-   new Participant('সাদান রনি', 'Sadan Roni'),
-   // Radiya
-   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),
+   // Oyon
+   new Participant('ইরফান অয়ন চৌধুরী', 'Irfan Oyon Chowdhury'),
+   // Bornomala
+   new Participant('বর্ণমালা','Bornomala'), 
+   // Adreesh
+   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'), 
    // Ayana
    new Participant('আয়ানা রহিম', 'Ayana Rahim'),
+   // Oishika
+   new Participant('ঐশিকা সরকার', 'Oishika Sarkar'),
+   // Arshia
+   new Participant('আরশিয়া হাসান', 'Arshia Hasan'),
+   // Totini
+   new Participant('তটিনী তনু', 'Totini Tonu'),
    // Sunniva
    new Participant('সুনিভা হাবিব','Sunniva Habib'),   
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'),   
-   // Rayaan 
-   new Participant('রায়ান আলী', 'Rayaan Ali'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
+   // Radiya
+   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),   
    // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'),   
-   // Rayaan 
-   new Participant('রায়ান আলী', 'Rayaan Ali'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
-   // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),
+   new Participant('সৃজন পাল', 'Srijon Pal'),   
+   // Noureen
+   new Participant('নওরীন চৌধুরী', 'Noureen Chowdhury'),
+   // Nirajana
+   new Participant('নীরাজনা ঘোষ', 'Nirajana Ghosh'),
 ]
 
 
@@ -79,7 +79,7 @@ function drawParticipants(arrOfParticipants)
    return participantListDiv;
 }
 
-function drawClass(itemName, className, arrOfParticipants)
+function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
 {
    // Get the container selector
    let containerDiv = document.querySelector('.container');   
@@ -89,17 +89,30 @@ function drawClass(itemName, className, arrOfParticipants)
    itemInfoDiv.className = 'itemInfo';      
    // Item Name
    let itemNameElement = document.createElement('h1');
-   itemNameElement.textContent = itemName;
+   itemNameElement.textContent = itemNameEnglish;
    itemInfoDiv.append(itemNameElement);   
    // Class Name
    let classNameElement = document.createElement('h2')
-   classNameElement.textContent = className;
+   classNameElement.textContent = itemNameBengali;
    itemInfoDiv.append(classNameElement);
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
+   // Special Thanks
+   let specialThanksDiv = document.createElement('div');
+   specialThanksDiv.className = "specialThanks";
+   let specialThanksHeader = document.createElement('h3');
+   specialThanksHeader.textContent = "Special Thanks (বিশেষ ধন্যবাদ)"
+   let specialThanksLine1 = document.createElement('h4');
+   specialThanksLine1.textContent = "Chamok Hasan (চমক হাসান)"
+   let specialThanksLine2 = document.createElement('h4');
+   specialThanksLine2.textContent = "Carlton Jones (কার্লটন জোনস)"
+   specialThanksDiv.append( specialThanksHeader);
+   specialThanksDiv.append(specialThanksLine1);
+   specialThanksDiv.append(specialThanksLine2);
 
    containerDiv.append(itemInfoDiv);
    containerDiv.append(participantListDiv);
+   containerDiv.append(specialThanksDiv);
 }
 
-drawClass('Poem: Kajer Lok (কবিতাঃ কাজের লোক)','Class: Kakatua (শ্রেণীঃ কাকাতুয়া)',kakatua_participants);
+drawClass('Ekushey History and Chorus','(একুশে ইতিহাস এবং দলীয় সঙ্গীত)', ekushe_participants);
