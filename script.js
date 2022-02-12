@@ -34,9 +34,11 @@ const kakatua_participants =
    new Participant('সৃজন পাল', 'Srijon Pal'),
 ]
 
+
 function drawParticipants(arrOfParticipants)
 {
-   participantListDiv = document.querySelector('.participant_list');
+   let participantListDiv = document.createElement('div')
+   participantListDiv.className = 'participant_list';
 
    arrOfParticipants.forEach(element => {
       let participantDiv = document.createElement('div');
@@ -61,7 +63,35 @@ function drawParticipants(arrOfParticipants)
       participantListDiv.append(participantDiv);
 
    });
+
+   return participantListDiv;
 }
 
-drawParticipants(kakatua_participants);
+function drawClass(itemName, className, arrOfParticipants)
+{
+   let containerDiv = document.querySelector('.container');
+   
+   // Item Info
+   let itemInfoDiv = document.createElement('div');
+   itemInfoDiv.className = 'itemInfo';   
+   
+   // Item Name
+   let itemNameElement = document.createElement('h1');
+   itemNameElement.textContent = itemName;
+   itemInfoDiv.append(itemNameElement);
+   
+   // Class Name
+   let classNameElement = document.createElement('h2')
+   classNameElement.textContent = className;
+   itemInfoDiv.append(classNameElement);
+
+   let participantListDiv = drawParticipants(arrOfParticipants);
+
+   containerDiv.append(itemInfoDiv);
+   containerDiv.append(participantListDiv);
+}
+
+
+
+drawClass('Poem: Kajer Lok (কবিতাঃ কাজের লোক)','Class: Kakatua (শ্রেণীঃ কাকাতুয়া)',kakatua_participants);
 
