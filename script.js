@@ -40,6 +40,10 @@ function drawParticipants(arrOfParticipants)
    let participantListDiv = document.createElement('div')
    participantListDiv.className = 'participant_list';
 
+   let participantListHeaderText = document.createElement('h3');
+   participantListHeaderText.textContent = 'Participants (অংশগ্রহণকারী)';
+   participantListDiv.append(participantListHeaderText);
+
    arrOfParticipants.forEach(element => {
       let participantDiv = document.createElement('div');
       participantDiv.className = 'participant';
@@ -69,29 +73,25 @@ function drawParticipants(arrOfParticipants)
 
 function drawClass(itemName, className, arrOfParticipants)
 {
-   let containerDiv = document.querySelector('.container');
+   // Get the container selector
+   let containerDiv = document.querySelector('.container');   
    
    // Item Info
    let itemInfoDiv = document.createElement('div');
-   itemInfoDiv.className = 'itemInfo';   
-   
+   itemInfoDiv.className = 'itemInfo';      
    // Item Name
    let itemNameElement = document.createElement('h1');
    itemNameElement.textContent = itemName;
-   itemInfoDiv.append(itemNameElement);
-   
+   itemInfoDiv.append(itemNameElement);   
    // Class Name
    let classNameElement = document.createElement('h2')
    classNameElement.textContent = className;
    itemInfoDiv.append(classNameElement);
-
+   // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
 
    containerDiv.append(itemInfoDiv);
    containerDiv.append(participantListDiv);
 }
 
-
-
 drawClass('Poem: Kajer Lok (কবিতাঃ কাজের লোক)','Class: Kakatua (শ্রেণীঃ কাকাতুয়া)',kakatua_participants);
-
