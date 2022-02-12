@@ -9,7 +9,7 @@ class Participant
       
       let first_name = english_name.split(' ')[0].toLowerCase();
       console.log(first_name);
-      this.image_file = `./assets/${first_name}_12x9.jpg`;
+      this.image_file = `./assets/kakatua/${first_name}_12x9.jpg`;
       console.log(this.image_file);
    }
 }
