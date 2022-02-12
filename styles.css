@@ -31,14 +31,14 @@ h1 {
   
   .participant_list {
     margin-top: 100px;
-    margin-left: 6%;
+    margin-left: 4%;
     margin-right: 10%;
   }
 
   .participant {
-    margin-left: 1%;
-    margin-bottom: 3%;
-    width: 240px;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    width: 300px;
     height: auto;
     border: 2px solid black;
     display: inline-block;
@@ -50,7 +50,7 @@ h1 {
   }
   
   .participant img {
-    max-width: 240px;
+    max-width: 300px;
     display: block;
     object-fit: contain;
   }
