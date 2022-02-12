@@ -1,0 +1,58 @@
+h1 {
+    font-size: 3em;
+    margin: 25px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  .container {
+    border: 1px solid red;
+    width: 1940px;
+    height: 1100px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .itemInfo {
+    height: 22.5%;
+  }
+  
+  .participant_list {
+    height: 77.5%;
+    margin-left: 6%;
+    margin-right: 10%;
+  }
+  
+  .participant {
+    margin-left: 4%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: aliceblue;
+    box-shadow: 10px 5px 5px grey;
+  }
+  
+  .participant img {
+    max-width: 300px;
+    display: block;
+    object-fit: contain;
+  }
+  
+  .nameEnglish,
+  .nameBangla {
+    margin: 0;
+    padding: 0;
+  }
+  
