@@ -32,6 +32,14 @@ const kakatua_participants =
    new Participant('তটিনী তনু', 'Totini Tonu'),
    // Srijon
    new Participant('সৃজন পাল', 'Srijon Pal'),
+   // Saadan
+   new Participant('সাদান রনি', 'Sadan Roni'),
+   // Radiya
+   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),
+   // Ayana
+   new Participant('আয়ানা রহিম', 'Ayana Rahim'),
+   // Sunniva
+   new Participant('সুনিভা হাবিব','Sunniva Habib'),
 ]
 
 

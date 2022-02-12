@@ -1,6 +1,6 @@
 h1 {
     font-size: 3em;
-    margin: 25px;
+    margin-bottom: 5px;
   }
   
   h2 {
@@ -20,20 +20,25 @@ h1 {
     text-align: center;
   }
   
+
   .itemInfo {
-    height: 22.5%;
+    height: 20%;
+  }
+
+  .participant_list {
+    height: 80%;
   }
   
   .participant_list {
-    height: 77.5%;
+    margin-top: 100px;
     margin-left: 6%;
     margin-right: 10%;
   }
-  
+
   .participant {
-    margin-left: 4%;
-    margin-bottom: 5%;
-    width: 300px;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    width: 240px;
     height: auto;
     border: 2px solid black;
     display: inline-block;
@@ -45,7 +50,7 @@ h1 {
   }
   
   .participant img {
-    max-width: 300px;
+    max-width: 240px;
     display: block;
     object-fit: contain;
   }
