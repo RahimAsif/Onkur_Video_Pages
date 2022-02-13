@@ -19,6 +19,14 @@ h1 {
     height: 1100px;
     box-sizing: border-box;
     text-align: center;
+    display: flex;
+    flex-direction: row;    
+  }
+
+  .container-left, .container-right
+  {
+    width: 50%;
+    border:1px solid black;
   }
   
 
