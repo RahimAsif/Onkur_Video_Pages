@@ -19,7 +19,7 @@ const ekushe_participants =
    // Oyon
    new Participant('ইরফান অয়ন চৌধুরী', 'Irfan Oyon Chowdhury'),
    // Bornomala
-   new Participant('বর্ণমালা','Bornomala'), 
+   new Participant('বিনীতা বর্ণমালা', 'Bineeta Bornomala'),
    // Adreesh
    new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'), 
    // Ayana
