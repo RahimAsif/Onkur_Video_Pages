@@ -114,4 +114,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Bengali Drama: 'Ashar Alo'",'(বাংলা নাটকঃ আশার আলো)', natok_participants);
+drawClass("Drama: Ashar Alo",'(নাটকঃ আশার আলো)', natok_participants);
