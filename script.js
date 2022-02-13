@@ -9,29 +9,23 @@ class Participant
       
       let first_name = english_name.split(' ')[0].toLowerCase();
       console.log(first_name);
-      this.image_file = `./assets/kakatua/${first_name}_12x9.jpg`;
+      this.image_file = `./assets/${first_name}_12x9.jpg`;
       console.log(this.image_file);
    }
 }
 
-const kakatua_participants = 
+const doyel_participants = 
 [
-   // Saadan
-   new Participant('সাদান রনি', 'Sadan Roni'),
-   // Radiya
-   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),
-   // Ayana
-   new Participant('আয়ানা রহিম', 'Ayana Rahim'),
-   // Sunniva
-   new Participant('সুনিভা হাবিব','Sunniva Habib'),   
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'),   
-   // Rayaan 
-   new Participant('রায়ান আলী', 'Rayaan Ali'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
-   // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),
+   // Bineeta
+   new Participant('বিনীতা বর্ণমালা', 'Bineeta Bornomala'),
+   // Inaya
+   new Participant('ইনায়া নাহার ডোসানী', 'Inaya Nahar Dossani'),
+   // Naqeeb
+   new Participant('নাকীব কিশোর জুলফিকার', 'Naqeeb Kishore Julfiker'),
+   // Zaeem
+   new Participant('যাইম যুবায়ের আহমেদ','Zaeem Zubayr Ahmed'),   
+   // Urshia
+   new Participant('উর্শিয়া তাহিয়াত','Urshia Tahiyat'),   
 ]
 
 
@@ -94,4 +88,4 @@ function drawClass(itemName, className, arrOfParticipants)
    containerDiv.append(participantListDiv);
 }
 
-drawClass('Poem: Kajer Lok (কবিতাঃ কাজের লোক)','Class: Kakatua (শ্রেণীঃ কাকাতুয়া)',kakatua_participants);
+drawClass('Poem: Lichu Chor (কবিতাঃ লিচু চোর)','Class: Doyel (শ্রেণীঃ দোয়েল)',doyel_participants);
