@@ -14,7 +14,7 @@ class Participant
    }
 }
 
-const ekushe_participants = 
+const natok_participants = 
 [
    // Rounak
    new Participant('রৌনক মণ্ডল', 'Rounak Mandal'),
@@ -114,4 +114,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Bengali Drama: 'Ashar Alo'",'(বাংলা নাটকঃ আশার আলো)', ekushe_participants);
+drawClass("Bengali Drama: 'Ashar Alo'",'(বাংলা নাটকঃ আশার আলো)', natok_participants);
