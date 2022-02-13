@@ -24,14 +24,14 @@ const jadoo_participants =
 
 const maa_baba_ami_class = 
 [
-   // Advika
-   new Participant('আদ্ভিকা দাস', 'Advika Das'),
-   // Noureen
-   new Participant('নওরীন চৌধুরী','Noureen Chowdhury'), 
-   // Oishika
-   new Participant('ঐশিকা সরকার','Oishika Sarkar'), 
-   // Raikishori
-   new Participant('রাইকিশোরী দে', 'Raikishori De'),
+   // Prateem
+   new Participant('শৌর্য প্রতিম দাস', 'Shourjo Prateem Das'),
+   // Imam
+   new Participant('সৈয়দ শাফি ইমাম','Syed Shafii Imam'), 
+   // Priyo
+   new Participant('সাত্ত্বিক রায় প্রিয়','Sattwik Roy Priyo'), 
+   // Shoroth
+   new Participant('শরৎ শুভ', 'Shoroth Shuvro'),
 ]
 
 
@@ -105,9 +105,10 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants, parentDi
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Choreography: Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
-   let name2 = 'Videography: Anar Mehta, Gargi Chattopadhyaya (আনার মেহতা, গার্গী চট্টোপাধ্যায়)';   
-   let names = [name1, name2];
+   let name1 = 'Intro: Ayana Rahim (আয়ানা রহিম)';
+   let name2 = 'Voiceover: Totini Tonu (তটিনী তনু)';   
+   let name3 = "Video Editing: Rajat Shuvro (রজত শুভ্র)"
+   let names = [name1, name2, name3];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    parentDiv.append(itemInfoDiv);
