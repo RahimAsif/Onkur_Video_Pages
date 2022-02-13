@@ -14,18 +14,24 @@ class Participant
    }
 }
 
-const natok_participants = 
+const group_dance_participants = 
 [
-   // Rounak
-   new Participant('রৌনক মণ্ডল', 'Rounak Mandal'),
-   // Arfia
-   new Participant('আরফিয়া আমরিন','Arfia Amreen'), 
-   // Tasneem
-   new Participant('তাসনিম হক','Tasneem Haque'), 
-   // Yusra
-   new Participant('ইউসরা জুনাইরাহ মাসুম', 'Yusra Zunairah Masum'),
-   // Arshia
-   new Participant('আরশিয়া হাসান', 'Arshia Hasan')
+   // Advika
+   new Participant('আদ্ভিকা দাস', 'Advika Das'),
+   // Noureen
+   new Participant('নওরীন চৌধুরী','Noureen Chowdhury'), 
+   // Oishika
+   new Participant('ঐশিকা সরকার','Oishika Sarkar'), 
+   // Raikishori
+   new Participant('রাইকিশোরী দে', 'Raikishori De'),
+   // Rishmitha
+   new Participant('রিশমিতা সিত', 'Rishmitha Sit'),
+   // Samriddhi
+   new Participant('সমৃদ্ধি ভট্টাচার্য','Samriddhi Bhattacharjee'), 
+   // Sarah
+   new Participant('সারাহ ম্যাথু', 'Sarah Matthew'),
+   // Tanishi
+   new Participant('তানিশী দাশ', 'Tanishi Das')
 ]
 
 
@@ -102,11 +108,9 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Acting: Nazia Ahmed (অভিনয়ঃ নাজিয়া আহমেদ)';
-   let name2 = 'Script Writer: Upal Mahbub (চিত্রনাট্য লেখকঃ উপাল মাহবুব)';
-   let name3 = 'Video Editing: Rajat Shuvro (দৃশ্য সম্পাদনাঃ রজত শুভ্র)';
-   let name4 = 'Miscellaneous: Noureen Chowdhury (আনুষাঙ্গিকঃ নওরীন চৌধুরী)';
-   let names = [name1, name2, name3, name4];
+   let name1 = 'Choreography: Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
+   let name2 = 'Videography: Anar Mehta, Gargi Chattopadhyaya (আনার মেহতা, গার্গী চট্টোপাধ্যায়)';   
+   let names = [name1, name2];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
@@ -114,4 +118,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Drama: Ashar Alo",'(নাটকঃ আশার আলো)', natok_participants);
+drawClass("Group Dance",'(দলীয় নাচ)', group_dance_participants);
