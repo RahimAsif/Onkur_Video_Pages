@@ -10,7 +10,7 @@ h1 {
   
   h3 {
     font-size: 2em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   .container {
@@ -24,15 +24,15 @@ h1 {
 
   
   .participant_list {
-    margin-left: 8%;
-    margin-right: 10%;
-    margin-top: 75px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
   }
 
   .participant {
-    margin-left: 1%;
-    margin-bottom: 3%;
-    width: 240px;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    width: 300px;
     height: auto;
     border: 2px solid black;
     display: inline-block;
@@ -44,7 +44,7 @@ h1 {
   }
   
   .participant img {
-    max-width: 240px;
+    max-width: 300px;
     display: block;
     object-fit: contain;
   }
@@ -57,7 +57,7 @@ h1 {
   
   .specialThanks
   {
-    margin-top: 70px;
+    margin-top: 35px;
     font-size: 0.9em;
   }
 

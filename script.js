@@ -16,30 +16,16 @@ class Participant
 
 const ekushe_participants = 
 [
-   // Oyon
-   new Participant('ইরফান অয়ন চৌধুরী', 'Irfan Oyon Chowdhury'),
-   // Bornomala
-   new Participant('বর্ণমালা','Bornomala'), 
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'), 
-   // Ayana
-   new Participant('আয়ানা রহিম', 'Ayana Rahim'),
-   // Oishika
-   new Participant('ঐশিকা সরকার', 'Oishika Sarkar'),
+   // Rounak
+   new Participant('রৌনক মণ্ডল', 'Rounak Mandal'),
+   // Arfia
+   new Participant('আরফিয়া আমরিন','Arfia Amreen'), 
+   // Tasneem
+   new Participant('তাসনিম হক','Tasneem Haque'), 
+   // Yusra
+   new Participant('ইউসরা জুনাইরাহ মাসুম', 'Yusra Zunairah Masum'),
    // Arshia
-   new Participant('আরশিয়া হাসান', 'Arshia Hasan'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
-   // Sunniva
-   new Participant('সুনিভা হাবিব','Sunniva Habib'),   
-   // Radiya
-   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),   
-   // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),   
-   // Noureen
-   new Participant('নওরীন চৌধুরী', 'Noureen Chowdhury'),
-   // Nirajana
-   new Participant('নীরাজনা ঘোষ', 'Nirajana Ghosh'),
+   new Participant('আরশিয়া হাসান', 'Arshia Hasan')
 ]
 
 
@@ -79,6 +65,24 @@ function drawParticipants(arrOfParticipants)
    return participantListDiv;
 }
 
+function drawSpecialThanks(headerText, names)
+{
+   let specialThanksDiv = document.createElement('div');
+   specialThanksDiv.className = "specialThanks";
+
+   let headerElem = document.createElement('h3');
+   headerElem.textContent = headerText;
+   specialThanksDiv.append(headerElem);
+
+   names.forEach(element => {
+      let elem = document.createElement('h4');   
+      elem.textContent = element;
+      specialThanksDiv.append(elem)
+   });
+   
+   return specialThanksDiv;
+}
+
 function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
 {
    // Get the container selector
@@ -98,21 +102,16 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let specialThanksDiv = document.createElement('div');
-   specialThanksDiv.className = "specialThanks";
-   let specialThanksHeader = document.createElement('h3');
-   specialThanksHeader.textContent = "Special Thanks (বিশেষ ধন্যবাদ)"
-   let specialThanksLine1 = document.createElement('h4');
-   specialThanksLine1.textContent = "Chamok Hasan (চমক হাসান)"
-   let specialThanksLine2 = document.createElement('h4');
-   specialThanksLine2.textContent = "Carlton Jones (কার্লটন জোনস)"
-   specialThanksDiv.append( specialThanksHeader);
-   specialThanksDiv.append(specialThanksLine1);
-   specialThanksDiv.append(specialThanksLine2);
+   let name1 = 'Acting: Nazia Ahmed (অভিনয়ঃ নাজিয়া আহমেদ)';
+   let name2 = 'Script Writer: Upal Mahbub Omi (চিত্রনাট্য লেখকঃ উপাল মাহবুব অমি)';
+   let name3 = 'Video Editing: Rajat Shuvro (ভিডিও এডিটিংঃ রজত শুভ্র)';
+   let name4 = 'Miscellaneous: Noureen Chowdhury (অনুশাঙ্গিকঃ নওরীন চৌধুরী)';
+   let names = [name1, name2, name3, name4];
+   let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
    containerDiv.append(participantListDiv);
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass('Ekushey History and Chorus','(একুশে ইতিহাস এবং দলীয় সঙ্গীত)', ekushe_participants);
+drawClass("Bengali Drama: 'Ashar Alo'",'(বাংলা নাটকঃ আশার আলো)', ekushe_participants);
