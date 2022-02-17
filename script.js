@@ -17,9 +17,9 @@ class Participant
 const jadoo_participants =
 [
    // Bineeta
-   new Participant('আদ্ভিকা দাস', 'Advika Das'),
-   // Kishore
-   new Participant('নওরীন চৌধুরী','Noureen Chowdhury'), 
+   new Participant('বিনীতা বর্ণমালা', 'Bineeta Bornomala'),   
+   // Naqeeb
+   new Participant('নাকীব কিশোর জুলফিকার', 'Naqeeb Kishore Julfiker'),
 ]
 
 const maa_baba_ami_class = 
@@ -31,7 +31,7 @@ const maa_baba_ami_class =
    // Priyo
    new Participant('সাত্ত্বিক রায় প্রিয়','Sattwik Roy Priyo'), 
    // Shoroth
-   new Participant('শরৎ শুভ', 'Shoroth Shuvro'),
+   new Participant('শরৎ শুভ', 'Shawroth Shuvro'),
 ]
 
 
@@ -132,9 +132,8 @@ function drawMagic(itemNameEnglish, itemNameBengali, arrOfParticipants, parentDi
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Choreography: Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
-   let name2 = 'Videography: Anar Mehta, Gargi Chattopadhyaya (আনার মেহতা, গার্গী চট্টোপাধ্যায়)';   
-   let names = [name1, name2];
+   let name1 = 'Chamok Hasan (চমক হাসান)';
+   let names = [name1];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    parentDiv.append(itemInfoDiv);
@@ -142,5 +141,5 @@ function drawMagic(itemNameEnglish, itemNameBengali, arrOfParticipants, parentDi
    parentDiv.append(specialThanksDiv);
 }
 
-drawClass("Poem and song (ছড়া এবং গান)",'Class: Maa Baba Ami (শ্রেণীঃ মা বাবা আমি)', maa_baba_ami_class, document.querySelector('.container-left'));
+drawClass("Rhymes and songs (ছড়া এবং গান)",'Class: Maa Baba Ami (শ্রেণীঃ মা বাবা আমি)', maa_baba_ami_class, document.querySelector('.container-left'));
 drawMagic("Magic Show",'(জাদু প্রদর্শন)', jadoo_participants, document.querySelector('.container-right'));
