@@ -102,10 +102,10 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Acting: Nazia Ahmed (অভিনয়ঃ নাজিয়া আহমেদ)';
-   let name2 = 'Script Writer: Upal Mahbub (চিত্রনাট্য লেখকঃ উপাল মাহবুব)';
-   let name3 = 'Video Editing: Rajat Shuvro (দৃশ্য সম্পাদনাঃ রজত শুভ্র)';
-   let name4 = 'Miscellaneous: Noureen Chowdhury (আনুষাঙ্গিকঃ নওরীন চৌধুরী)';
+   let name1 = 'Acting: Nazia Ahmed (নাজিয়া আহমেদ)';
+   let name2 = 'Script Writer: Upal Mahbub (উপাল মাহবুব)';
+   let name3 = 'Video Editing: Rajat Shuvro (রজত শুভ্র)';
+   let name4 = 'Technical cooperation: Noureen Chowdhury (নওরীন চৌধুরী)';
    let names = [name1, name2, name3, name4];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
