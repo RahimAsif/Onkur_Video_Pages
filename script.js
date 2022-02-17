@@ -9,29 +9,27 @@ class Participant
       
       let first_name = english_name.split(' ')[0].toLowerCase();
       console.log(first_name);
-      this.image_file = `./assets/kakatua/${first_name}_12x9.jpg`;
+      this.image_file = `./assets/${first_name}_12x9.jpg`;
       console.log(this.image_file);
    }
 }
 
-const kakatua_participants = 
+const tuntuni_participants = 
 [
-   // Saadan
-   new Participant('সাদান রনি', 'Sadan Roni'),
-   // Radiya
-   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),
-   // Ayana
-   new Participant('আয়ানা রহিম', 'Ayana Rahim'),
-   // Sunniva
-   new Participant('সুনিভা হাবিব','Sunniva Habib'),   
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'),   
-   // Rayaan 
-   new Participant('রায়ান আলী', 'Ryaan Ali'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
-   // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),
+   // Shafqat   
+   new Participant('শাফকাত জামান','Shafqat Zaman'),
+   // Imam   
+   new Participant('সৈয়দ শাফি ইমাম','Syed Shafii Imam'),
+   // Rudoshi
+   new Participant('রোদসী মহিমা', 'Rudosi Mohima'),
+   // Rehan
+   new Participant('আরেবুল হক রেহান','Areebul Haque Rehan'),   
+   // Neel
+   new Participant('রুদ্র নীল রাফায়েল','Rudhro Neel Raphael'),   
+   // Samreen 
+   new Participant('সামরীন চৌধুরী', 'Samreen Chowdhury'),
+   // Zaayd
+   new Participant('জেইড ফারুক', 'Zaayd Faruque'),
 ]
 
 
@@ -94,4 +92,4 @@ function drawClass(itemName, className, arrOfParticipants)
    containerDiv.append(participantListDiv);
 }
 
-drawClass('Poem: Kajer Lok (কবিতাঃ কাজের লোক)','Class: Kakatua (শ্রেণীঃ কাকাতুয়া)',kakatua_participants);
+drawClass('Rhyme: Tatir Bari Banger Basha (ছড়াঃ তাঁতির বাড়ি ব্যাঙের বাসা)','Class: Tuntuni (শ্রেণীঃ টুনটুনি)',tuntuni_participants);
