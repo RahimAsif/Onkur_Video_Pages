@@ -110,7 +110,8 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Special Thanks
    let name1 = 'Choreography: Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
    let name2 = 'Videography: Anar Mehta, Gargi Chattopadhyaya (আনার মেহতা, গার্গী চট্টোপাধ্যায়)';   
-   let names = [name1, name2];
+   let name3 = 'Students of Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়ের ছাত্রীদের)';
+   let names = [name1, name2, name3];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
