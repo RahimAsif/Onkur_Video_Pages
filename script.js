@@ -106,9 +106,12 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    specialThanksLine1.textContent = "Chamok Hasan (চমক হাসান)"
    let specialThanksLine2 = document.createElement('h4');
    specialThanksLine2.textContent = "Carlton Jones (কার্লটন জোনস)"
+   let specialThanksLine3 = document.createElement('h4');
+   specialThanksLine3.textContent = "Noureen Chowdhury (নওরীন চৌধুরী)"
    specialThanksDiv.append( specialThanksHeader);
    specialThanksDiv.append(specialThanksLine1);
    specialThanksDiv.append(specialThanksLine2);
+   specialThanksDiv.append(specialThanksLine3);
 
    containerDiv.append(itemInfoDiv);
    containerDiv.append(participantListDiv);
