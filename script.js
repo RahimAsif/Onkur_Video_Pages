@@ -1,9 +1,10 @@
 class Participant 
 {
-   constructor(bengali_name, english_name)
+   constructor(character_name, bengali_name, english_name)
    {  
       console.log(bengali_name, english_name);
-
+       
+      this.character_name = character_name;
       this.english_name = english_name;
       this.bengali_name = bengali_name;
       
@@ -16,22 +17,12 @@ class Participant
 
 const group_dance_participants = 
 [
-   // Advika
-   new Participant('আদ্ভিকা দাস', 'Advika Das'),
-   // Noureen
-   new Participant('নওরীন চৌধুরী','Noureen Chowdhury'), 
-   // Oishika
-   new Participant('ঐশিকা সরকার','Oishika Sarkar'), 
-   // Raikishori
-   new Participant('রাইকিশোরী দে', 'Raikishori De'),
-   // Rishmitha
-   new Participant('রিশমিতা সিত', 'Rishmitha Sit'),
-   // Samriddhi
-   new Participant('সমৃদ্ধি ভট্টাচার্য','Samriddhi Bhattacharjee'), 
-   // Sarah
-   new Participant('সারাহ ম্যাথু', 'Sarah Matthew'),
-   // Tanishi
-   new Participant('তানিশী দাশ', 'Tanishi Das')
+   // Tania
+   new Participant('Falguni (ফাল্গুনি)', 'শাহরীন বিনতে সালাম', 'Shahrin Binte Salam'),
+   // Nabil
+   new Participant('Boltu (বল্টু)', 'সাবের নাবিল','Saber Nabil'), 
+   // Tanni
+   new Participant('Chader Buri (চাঁদের বুড়ী)', 'তন্বী চক্রবর্তী','Tanni Chakraborty'), 
 ]
 
 
@@ -47,6 +38,10 @@ function drawParticipants(arrOfParticipants)
    arrOfParticipants.forEach(element => {
       let participantDiv = document.createElement('div');
       participantDiv.className = 'participant';
+      // Character
+      let divCharacterName = document.createElement('div');
+      divCharacterName.className = 'characterName'
+      divCharacterName.textContent = element.character_name;
       // Set the image
       let img = document.createElement('img')
       img.src = element.image_file;
@@ -60,6 +55,7 @@ function drawParticipants(arrOfParticipants)
       divBanglaName.className = 'nameBangla'
       divBanglaName.textContent = element.bengali_name;
 
+      participantDiv.append(divCharacterName);
       participantDiv.append(img);
       participantDiv.append(divEnglishName);
       participantDiv.append(divBanglaName);
@@ -108,10 +104,11 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Choreography: Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
-   let name2 = 'Videography: Anar Mehta, Gargi Chattopadhyaya (আনার মেহতা, গার্গী চট্টোপাধ্যায়)';   
-   let name3 = 'Students of Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়ের ছাত্রীদের)';
-   let names = [name1, name2, name3];
+   let name1 = 'Lyrics and Composition: Eshita Islam (ঈশিতা ইসলাম)';
+   let name2 = 'Audio Mixing and Keyboard: Samik Banerjee (সামিক ব্যানার্জি)';
+   let name3 = 'Vocals: Eshita Islam, Saber Nabil (ঈশিতা ইসলাম, সাবের নাবিল)';      
+   let name4 = 'Video Recording: Saleha Eva (সালেহা ইভা)';
+   let names = [name1, name2, name3, name4];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
@@ -119,4 +116,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Group Dance",'(দলীয় নাচ)', group_dance_participants);
+drawClass("Puppet Presentation",'(পুতুলের পরিবেশনা)', group_dance_participants);

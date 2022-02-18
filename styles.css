@@ -24,7 +24,7 @@ h1 {
 
   
   .participant_list {
-    margin-left: 6%;
+    margin-left: 3%;
     margin-right: 5%;
     margin-top: 75px;
   }
@@ -32,7 +32,7 @@ h1 {
   .participant {
     margin-left: 4%;
     margin-bottom: 1%;
-    width: 300px;
+    width: 450px;
     height: auto;
     border: 2px solid black;
     display: inline-block;
@@ -44,21 +44,39 @@ h1 {
   }
   
   .participant img {
-    max-width: 300px;
+    max-width: 450px;
     display: block;
     object-fit: contain;
   }
   
   .nameEnglish,
-  .nameBangla {
+  .nameBangla, 
+  .characterName {
     margin: 0;
     padding: 0;
+  }
+
+  .characterName
+  {
+    font-size: 1.6em;
+    padding: 5px 0 5px 0;
+  }
+
+  .nameEnglish, .nameBangla
+  {
+    font-size: 1.2em;
   }
   
   .specialThanks
   {
-    margin-top: 40px;
-    font-size: 0.9em;
+    margin-top: 90px;
+  }
+
+
+  .specialThanks h3
+  {
+    font-size: 2em;
+    margin-bottom: 0;
   }
 
   .specialThanks h4
