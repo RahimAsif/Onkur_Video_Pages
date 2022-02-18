@@ -26,13 +26,13 @@ h1 {
   .participant_list {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 30px;
+    margin-top: 75px;
   }
 
   .participant {
     margin-left: 4%;
     margin-bottom: 2%;
-    width: 300px;
+    width: 600px;
     height: auto;
     border: 2px solid black;
     display: inline-block;
@@ -44,7 +44,7 @@ h1 {
   }
   
   .participant img {
-    max-width: 300px;
+    max-width: 600px;
     display: block;
     object-fit: contain;
   }
@@ -53,12 +53,18 @@ h1 {
   .nameBangla {
     margin: 0;
     padding: 0;
+    font-size: 1.5em;
   }
   
   .specialThanks
   {
-    margin-top: 35px;
+    margin-top: 60px;
     font-size: 0.9em;
+  }
+
+  .specialThanks h3
+  {
+    margin-bottom: 1px;
   }
 
   .specialThanks h4

@@ -16,16 +16,8 @@ class Participant
 
 const natok_participants = 
 [
-   // Rounak
-   new Participant('রৌনক মণ্ডল', 'Rounak Mandal'),
-   // Arfia
-   new Participant('আরফিয়া আমরিন','Arfia Amreen'), 
-   // Tasneem
-   new Participant('তাসনিম হক','Tasneem Haque'), 
-   // Yusra
-   new Participant('ইউসরা জুনাইরাহ মাসুম', 'Yusra Zunairah Masum'),
-   // Arshia
-   new Participant('আরশিয়া হাসান', 'Arshia Hasan')
+   // Totini
+   new Participant('তটিনী তনু', 'Totini Tonu'),   
 ]
 
 
@@ -35,7 +27,7 @@ function drawParticipants(arrOfParticipants)
    participantListDiv.className = 'participant_list';
 
    let participantListHeaderText = document.createElement('h3');
-   participantListHeaderText.textContent = 'Participants (অংশগ্রহণকারী)';
+   participantListHeaderText.textContent = 'Performer (নৃত্য শিল্পী)';
    participantListDiv.append(participantListHeaderText);
 
    arrOfParticipants.forEach(element => {
@@ -91,22 +83,21 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Item Info
    let itemInfoDiv = document.createElement('div');
    itemInfoDiv.className = 'itemInfo';      
-   // Item Name
+   // Item Name (English)
    let itemNameElement = document.createElement('h1');
    itemNameElement.textContent = itemNameEnglish;
    itemInfoDiv.append(itemNameElement);   
-   // Class Name
+   // Item Name (Bengali)
    let classNameElement = document.createElement('h2')
    classNameElement.textContent = itemNameBengali;
    itemInfoDiv.append(classNameElement);
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Acting: Nazia Ahmed (নাজিয়া আহমেদ)';
-   let name2 = 'Script Writer: Upal Mahbub (উপাল মাহবুব)';
-   let name3 = 'Video Editing: Rajat Shuvro (রজত শুভ্র)';
-   let name4 = 'Technical cooperation: Noureen Chowdhury (নওরীন চৌধুরী)';
-   let names = [name1, name2, name3, name4];
+   let name1 = 'Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
+   let name2 = 'Video Editing: Rajat Shuvro (রজত শুভ্র)';
+   let name3 = 'Videography: Tanni Chakraborty (তন্বী চক্রবর্তী)';
+   let names = [name1, name3, name2];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
@@ -114,4 +105,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Drama: Ashar Alo",'(নাটকঃ আশার আলো)', natok_participants);
+drawClass("Individual Dance",'(একক নাচ)', natok_participants);
