@@ -1,87 +1,49 @@
-h1 {
-    font-size: 3em;
-    margin-bottom: 5px;
-  }
-  
-  h2 {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  
-  h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .container {
-    border: 1px solid red;
-    width: 1940px;
-    height: 1100px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
+.container {
+  border: 1px solid red;
+  width: 1940px;
+  height: 1100px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;    
+  background-color: black;
+  color: white;
+}
 
-  
-  .participant_list {
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-top: 75px;
-  }
-
-  .participant {
-    margin-left: 4%;
-    margin-bottom: 1%;
-    width: 450px;
-    height: auto;
-    border: 2px solid black;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: aliceblue;
-    box-shadow: 10px 5px 5px grey;
-  }
-  
-  .participant img {
-    max-width: 450px;
-    display: block;
-    object-fit: contain;
-  }
-  
-  .nameEnglish,
-  .nameBangla, 
-  .characterName {
-    margin: 0;
-    padding: 0;
-  }
-
-  .characterName
+  .container-gap-top, .container-gap-bottom
   {
-    font-size: 1.6em;
-    padding: 5px 0 5px 0;
+    height: 25%;
   }
 
-  .nameEnglish, .nameBangla
-  {
-    font-size: 1.2em;
-  }
-  
-  .specialThanks
-  {
-    margin-top: 90px;
-  }
+ .container-english, .container-bengali
+ {
+   height:25%;
+   font-size: 3.3em;
+ }
 
+ .container-english
+ {
+   color: yellow;
+ }
 
-  .specialThanks h3
-  {
-    font-size: 2em;
-    margin-bottom: 0;
-  }
+ .container-bengali
+ {
+   color: lightgreen;
+ }
 
-  .specialThanks h4
-  {
-    font-size: 1.6em;
-    margin: 0;
-    font-weight: normal;
-  }
+ .line1
+ {
+   font-style: italic;
+ }
+
+ .line2
+ {
+   font-size: 1.1em;
+   color: orange;
+ }
+
+ .line3
+ {
+   font-size: 0.9em;
+   color: white;
+ }
