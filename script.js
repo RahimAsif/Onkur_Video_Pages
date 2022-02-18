@@ -104,7 +104,7 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Lyrics and Composition: Eshita Islam (ঈশিতা ইসলাম)';
+   let name1 = 'Lyrics and Music Composition: Eshita Islam (ঈশিতা ইসলাম)';
    let name2 = 'Audio Mixing and Keyboard: Samik Banerjee (সামিক ব্যানার্জি)';
    let name3 = 'Vocals: Eshita Islam, Saber Nabil (ঈশিতা ইসলাম, সাবের নাবিল)';      
    let name4 = 'Video Recording: Saleha Eva (সালেহা ইভা)';
