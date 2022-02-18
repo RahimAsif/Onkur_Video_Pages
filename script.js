@@ -17,7 +17,7 @@ class Participant
 const natok_participants = 
 [
    // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),   
+   new Participant('নওরীন চৌধুরী', 'Noureen Chowdhury'),   
 ]
 
 
@@ -27,7 +27,7 @@ function drawParticipants(arrOfParticipants)
    participantListDiv.className = 'participant_list';
 
    let participantListHeaderText = document.createElement('h3');
-   participantListHeaderText.textContent = 'Performer (নৃত্য শিল্পী)';
+   participantListHeaderText.textContent = 'Singer (কণ্ঠশিল্পী)';
    participantListDiv.append(participantListHeaderText);
 
    arrOfParticipants.forEach(element => {
@@ -94,10 +94,9 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Gargi Chattopadhyaya (গার্গী চট্টোপাধ্যায়)';
-   let name2 = 'Video Editing: Rajat Shuvro (রজত শুভ্র)';
-   let name3 = 'Videography: Tanni Chakraborty (তন্বী চক্রবর্তী)';
-   let names = [name1, name3, name2];
+   let name1 = 'Keyboard Player: Samik Banerjee (সামিক ব্যানার্জি)';
+   let name2 = 'Nandana Mitra (নন্দনা মিত্র)';   
+   let names = [name1, name2];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    containerDiv.append(itemInfoDiv);
@@ -105,4 +104,4 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass("Individual Dance",'(একক নাচ)', natok_participants);
+drawClass("Song: Tomari Naam Bolbo - Rabindra Sangeet",'(গানঃ তোমারি নাম বলবো - রবীন্দ্র সঙ্গীত)', natok_participants);
