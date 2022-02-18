@@ -14,32 +14,30 @@ class Participant
    }
 }
 
-const ekushe_participants = 
+const zoo_participants = 
 [
+   // Rounak
+   new Participant('রৌনক মণ্ডল', 'Rounak Mandal'),
    // Oyon
    new Participant('ইরফান অয়ন চৌধুরী', 'Irfan Oyon Chowdhury'),
-   // Bornomala
-   new Participant('বিনীতা বর্ণমালা', 'Bineeta Bornomala'),
-   // Adreesh
-   new Participant('অদ্রীশ সিংহরায়','Adreesh Sinharay'), 
-   // Ayana
-   new Participant('আয়ানা রহিম', 'Ayana Rahim'),
    // Oishika
    new Participant('ঐশিকা সরকার', 'Oishika Sarkar'),
-   // Arshia
-   new Participant('আরশিয়া হাসান', 'Arshia Hasan'),
-   // Totini
-   new Participant('তটিনী তনু', 'Totini Tonu'),
-   // Sunniva
-   new Participant('সুনিভা হাবিব','Sunniva Habib'),   
-   // Radiya
-   new Participant('তাইরাত রাদিয়া', 'Tairaat Radiya'),   
-   // Srijon
-   new Participant('সৃজন পাল', 'Srijon Pal'),   
+   // Arfia
+   new Participant('আরফিয়া আমরিন','Arfia Amreen'), 
    // Noureen
    new Participant('নওরীন চৌধুরী', 'Noureen Chowdhury'),
-   // Nirajana
-   new Participant('নীরাজনা ঘোষ', 'Nirajana Ghosh'),
+   // Yusra
+   new Participant('ইউসরা জুনাইরাহ মাসুম', 'Yusra Zunairah Masum'),
+   // Trinish
+   new Participant('ত্রিণীশ চ্যাটার্জী', 'Trinish Chatterjee'),
+   // Amelie
+   new Participant('আমেলি রায়', 'Amélie Roy'),
+   // Samina
+   new Participant('সামিনা নাহার ডোসানি', 'Samina Naher Dossani'),
+   // Raheel
+   new Participant('রাহিল হাসান', 'Raheel Hasan'),
+   // Agniv
+   new Participant('অগ্নিব দাস', 'Agniv Das'),
 ]
 
 
@@ -79,7 +77,7 @@ function drawParticipants(arrOfParticipants)
    return participantListDiv;
 }
 
-function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
+function drawClass(item1, item2, item3, item4, arrOfParticipants)
 {
    // Get the container selector
    let containerDiv = document.querySelector('.container');   
@@ -87,35 +85,35 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants)
    // Item Info
    let itemInfoDiv = document.createElement('div');
    itemInfoDiv.className = 'itemInfo';      
-   // Item Name
-   let itemNameElement = document.createElement('h1');
-   itemNameElement.textContent = itemNameEnglish;
-   itemInfoDiv.append(itemNameElement);   
-   // Class Name
-   let classNameElement = document.createElement('h2')
-   classNameElement.textContent = itemNameBengali;
-   itemInfoDiv.append(classNameElement);
+   
+   // Item Name (English)
+   let englishNameElem = document.createElement('h1');
+   englishNameElem.textContent = item1;
+   itemInfoDiv.append(englishNameElem);   
+   // Item Name (Bengali)
+   let bengaliNameElem = document.createElement('h2')
+   bengaliNameElem.textContent = item2;
+   itemInfoDiv.append(bengaliNameElem);
+
+   // Class Name (English)
+   let classNameEnglishElement = document.createElement('h3')
+   classNameEnglishElement.textContent = item3;
+   classNameEnglishElement.className = "classNameEnglish";
+   itemInfoDiv.append(classNameEnglishElement);
+   
+   // Class Name (Bengali)
+   let classNameBengaliElement = document.createElement('h3')
+   classNameBengaliElement.textContent = item4;
+   classNameBengaliElement.className = "classNameBengali";
+   itemInfoDiv.append(classNameBengaliElement);
+
+   
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
-   // Special Thanks
-   let specialThanksDiv = document.createElement('div');
-   specialThanksDiv.className = "specialThanks";
-   let specialThanksHeader = document.createElement('h3');
-   specialThanksHeader.textContent = "Special Thanks (বিশেষ ধন্যবাদ)"
-   let specialThanksLine1 = document.createElement('h4');
-   specialThanksLine1.textContent = "Chamok Hasan (চমক হাসান)"
-   let specialThanksLine2 = document.createElement('h4');
-   specialThanksLine2.textContent = "Carlton Jones (কার্লটন জোনস)"
-   let specialThanksLine3 = document.createElement('h4');
-   specialThanksLine3.textContent = "Noureen Chowdhury (নওরীন চৌধুরী)"
-   specialThanksDiv.append( specialThanksHeader);
-   specialThanksDiv.append(specialThanksLine1);
-   specialThanksDiv.append(specialThanksLine2);
-   specialThanksDiv.append(specialThanksLine3);
-
+   
    containerDiv.append(itemInfoDiv);
    containerDiv.append(participantListDiv);
    containerDiv.append(specialThanksDiv);
 }
 
-drawClass('Ekushey History and Chorus','(একুশে ইতিহাস এবং দলীয় সঙ্গীত)', ekushe_participants);
+drawClass("Digital Storyboard: A Ray of Hope - The Zoo's New Life",'(ডিজিটাল স্টোরিবোর্ডঃ আশার আলো - চিড়িয়াখানার নতুন জীবন)','Class: Kokil, Tia, Eagle', '(শ্রেণীঃ কোকিল, টিয়া, ঈগল)', zoo_participants);
