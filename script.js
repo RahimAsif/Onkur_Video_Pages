@@ -105,10 +105,11 @@ function drawClass(itemNameEnglish, itemNameBengali, arrOfParticipants, parentDi
    // Participants
    let participantListDiv = drawParticipants(arrOfParticipants);
    // Special Thanks
-   let name1 = 'Intro: Ayana Rahim (আয়ানা রহিম)';
-   let name2 = 'Voiceover: Totini Tonu (তটিনী তনু)';   
-   let name3 = "Video Editing: Rajat Shuvro (রজত শুভ্র)"
-   let names = [name1, name2, name3];
+   let name1 = 'Intro Lyrics: Rajat Shuvro (রজত শুভ্র)';
+   let name2 = 'Intro Singer: Ayana Rahim (আয়ানা রহিম)';
+   let name3 = 'Voiceover: Totini Tonu (তটিনী তনু)';   
+   let name4 = "Video Editing: Rajat Shuvro (রজত শুভ্র)"
+   let names = [name1, name2, name3, name4];
    let specialThanksDiv = drawSpecialThanks("Special Thanks (বিশেষ ধন্যবাদ)", names);
 
    parentDiv.append(itemInfoDiv);
