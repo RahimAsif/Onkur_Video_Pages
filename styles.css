@@ -12,12 +12,12 @@
 
   .container-gap-top, .container-gap-bottom
   {
-    height: 25%;
+    height: 16%;
   }
 
  .container-english, .container-bengali
  {
-   height:25%;
+   height:37%;
    font-size: 3.3em;
  }
 
@@ -45,5 +45,11 @@
  .line3
  {
    font-size: 0.9em;
+   color: white;
+ }
+
+ .line4
+ {
+   font-size: 0.6em;
    color: white;
  }
